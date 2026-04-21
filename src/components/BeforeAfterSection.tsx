@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import beforeAfter1 from "@/assets/before-after-1.jpg";
+import beforeAfter1 from "@/assets/before.png";
 import beforeAfter2 from "@/assets/before-after-2.jpg";
 
 const results = [

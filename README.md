@@ -12,7 +12,7 @@ npm run dev
 ```bash
 npm run build
 ```
-Output goes to `dist/`. Deploy to Vercel, Netlify, Cloudflare Pages, or any static host.
+Output goes to .
 
 ## Stack
 - React 18 + TypeScript
