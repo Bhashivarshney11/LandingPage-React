@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 40 25% 97%;
+  --foreground: 230 30% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 230 30% 12%;
+  --primary: 230 30% 12%;
+  --primary-foreground: 40 25% 97%;
+  --muted: 40 15% 94%;
+  --muted-foreground: 230 10% 45%;
+  --border: 40 15% 88%;
+
+  --rose: 358 65% 60%;
+  --rose-foreground: 40 25% 97%;
+  --rose-light: 358 60% 92%;
+  --navy: 230 40% 14%;
+  --navy-light: 230 30% 25%;
+  --cream: 40 30% 96%;
+  --gold: 38 55% 65%;
+}
+
+* { border-color: hsl(var(--border)); }
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: "Montserrat", sans-serif;
+}
+h1,h2,h3,h4,h5,h6 { font-family: "Montserrat", sans-serif; }
+
+@layer utilities {
+  .text-gradient-rose {
+    background: linear-gradient(135deg, hsl(var(--rose)), hsl(var(--gold)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-gradient-rose { background: linear-gradient(135deg, hsl(var(--rose)), hsl(15 70% 60%)); }
+  .bg-gradient-navy { background: linear-gradient(135deg, hsl(var(--navy)), hsl(var(--navy-light))); }
+  .shadow-rose { box-shadow: 0 8px 30px -8px hsl(var(--rose) / 0.3); }
+  .shadow-elegant { box-shadow: 0 4px 20px -4px rgba(0,0,0,0.08); }
+}
