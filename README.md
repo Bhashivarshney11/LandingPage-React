@@ -12,7 +12,7 @@ npm run dev
 ```bash
 npm run build
 ```
-Output goes to .
+vercel output link :- https://landing-page-react-eight-drab.vercel.app/
 
 ## Stack
 - React 18 + TypeScript
